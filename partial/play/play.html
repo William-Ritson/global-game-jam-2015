@@ -1,0 +1,22 @@
+<div ng-controller="PlayCtrl">
+
+    <div id="game">
+        <div id="game-text" ng-hide="scene.img" ng-click="nextParagraph()">
+            <div ng-show="loading">Loading...</div>
+            
+            <p ng-repeat="paragraph in paragraphs">{{paragraph}}</p>
+        </div>
+
+        <div ng-show="scene.img">
+            <img id="game-image" ng-src="images/{{scene.img}}">
+            
+            <div id="game-controls">
+                <a ng-repeat="option in scene.transitions" 
+                   ng-href="#/play/{{option.targetId}}" 
+                   class="game-btn">{{option.text}}</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
