@@ -8,10 +8,6 @@
 
         "intro": {
             "text": "9: A.M ... Time to clock in \n Its just another day at the office taking calls at the Catastrophe Tip Line video game help service.\n Its a lame name I know, I didn't chose it\n *Bring... Bring*\n My phone is rining. I should probably pick it up. I don't really want to.\n What do I do?",
-            "next": "intro-img"            
-        },
-        
-        "intro-img" : {
             "img": "back1.jpg",
             "transitions": [
                 {
@@ -24,9 +20,9 @@
                 }
             ]
         },
-        
+
         "call-1": {
-            "text":  "\"Hello Sir. Welcome to the Catastrophe Tips line. Your call may be recorded for quality assurance.\"\n Another customer the same old line. I wonder what marketer thought it would be a good idea to call ourselvse the Catastrophe Tips line. Half the people who call me don't event even seem to relize this is about video games. \n The customer responds \"stuff...\"",
+            "text": "\"Hello Sir. Welcome to the Catastrophe Tips line. Your call may be recorded for quality assurance.\"\n Another customer the same old line. I wonder what marketer thought it would be a good idea to call ourselvse the Catastrophe Tips line. Half the people who call me don't event even seem to relize this is about video games. \n The customer responds \"stuff...\"",
             "next": "scene-2"
         },
 
@@ -64,7 +60,7 @@
                 }
             ]
         },
-        
+
         "scene-5": {
             "text": "random demo te it",
             "img": "back4.jpg",

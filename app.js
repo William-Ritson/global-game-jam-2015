@@ -1,4 +1,4 @@
-angular.module('vngame', ['ngAudio', 'ui.bootstrap','ui.utils','ngRoute','ngAnimate']);
+angular.module('vngame', ['ui.bootstrap','ui.utils','ngRoute','ngAnimate']);
 
 angular.module('vngame').config(function($routeProvider) {
 

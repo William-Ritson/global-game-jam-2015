@@ -1,30 +1,23 @@
-angular.module('vngame').factory('sound', function (ngAudio, $log) {
+angular.module('vngame').factory('sound', function ($log) {
 
-    var sounds = {
-        theme: 'sounds/theme.mp3'
-    };
-
-
-    var sound = {};
+    var sound = {},
+        buzz = window.buzz,
+        sounds = {
+            theme: new buzz.sound("/sounds/theme", {
+                formats: ["mp3", ]
+            })
+        };
+    
     sound.current = {};
 
     var saved = {
         name: '',
         pos: 0
     };
+    
     sound.play = function (name) {
-        $log.log('play', name);
-        sound.current = ngAudio.load(sounds[name]);
+        sound.current = sounds[name];
         sound.current.play();
-        sound.current.looping = true;
-        if (saved.name === name) {
-            sound.current.position = saved.pos;
-        }
-        saved.name = name;
-    };
-
-    sound.savePos = function () {
-        saved.pos = sound.current.position;
     };
 
     sound.stop = function () {
@@ -35,8 +28,6 @@ angular.module('vngame').factory('sound', function (ngAudio, $log) {
     sound.playSfx = function () {
         $log.log('playSfx');
 
-        sounds[name].looping = false;
-        sounds[name].play();
     };
 
     return sound;

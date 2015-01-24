@@ -11,7 +11,6 @@ angular.module('vngame').controller('PlayCtrl', function ($scope, $routeParams, 
 
 
         sound.play('theme');
-        sound.savePos();
     };
 
     //$scope.theme = ngAudio.load('sounds/theme.mp3');
@@ -24,14 +23,11 @@ angular.module('vngame').controller('PlayCtrl', function ($scope, $routeParams, 
     };
 
     $scope.nextParagraph = function () {
-        sound.savePos();
-
         if ($scope.unrenderedParagraphs.length < 1) {
             location.hash = '#/play/' + $scope.scene.next;
         } else {
             $scope.paragraphs.push($scope.unrenderedParagraphs.splice(0, 1)[0]);
         }
-        sound.play('theme');
 
         //$scope.theme.play();
     };
