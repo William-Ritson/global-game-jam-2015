@@ -17,7 +17,7 @@ angular.module('vngame').factory('sound', function ($log) {
     
     sound.play = function (name) {
         sound.current = sounds[name];
-        sound.current.play();
+        sound.current.play().loop();
     };
 
     sound.stop = function () {

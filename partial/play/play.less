@@ -9,7 +9,7 @@
 }
 
 .btn-ghost {
-    background-color: rgba(103, 100, 100, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     color: #ededed;
     border: 2px solid #ededed;
     &:hover {
@@ -17,7 +17,7 @@
         -moz-transition: 0.2s ease;
         -o-transition: 0.2s ease;
         transition: 0.2s ease;
-        background-color: rgba(155, 180, 193, 0.91);
+        background-color: rgba(0, 0, 0, 0.85);
         color: #ffffff;
     }
 }
@@ -38,16 +38,24 @@
     overflow: hidden;
     div {
         box-sizing: border-box;
-        overflow: hidden;
     }
 }
 
 #game-text {
-    height: 100%;
-    background-color: black;
+    border: 2px solid;
+    border-radius: 25px;
+    z-index: 10;
+    position: absolute;
+    height: 60%;
+    width: 70%;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 15%;
+    margin-top: 3.5%;
     color: white;
     font-family: monospace;
     padding: 5%;
+    padding-top: 2.5%;
     p {
         margin: 3%;
     }
@@ -59,9 +67,10 @@
     padding: 2%;
     height: 20%;
     margin-top: 35%;
-    width: 60%;
-    margin-left: 20%;
+    width: 70%;
+    margin-left: 15%;
     a {
+        min-width: 25%;
         opacity: 1;
         padding: 2%;
         margin: 2%;

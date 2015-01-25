@@ -7,12 +7,19 @@
     "scenes": {
 
         "intro": {
-            "text": "9: A.M ... Time to clock in \n Its just another day at the office taking calls at the Catastrophe Tip Line video game help service.\n Its a lame name I know, I didn't chose it\n *Bring... Bring*\n My phone is rining. I should probably pick it up. I don't really want to.\n What do I do?",
-            "img": "back1.jpg",
+            "text": [
+                "9: A.M ... Time to clock in",
+                "Its just another day at the office taking calls at the Catastrophe Tip Line video game help service.",
+                "Its a lame name I know, I didn't chose it",
+                "*Bring... Bring*",
+                "My phone is ringing. I should probably pick it up. I don't really want to.",
+                "What do I do?"
+            ],
+            "img": "shadowguy.png",
             "transitions": [
                 {
-                    "text": "Ignore it",
-                    "targetId": "scene-2"
+                    "text": "Ignore It",
+                    "targetId": "ignore-call-1"
                 },
                 {
                     "text": "Pick it up",
@@ -21,37 +28,69 @@
             ]
         },
 
-        "call-1": {
-            "text": "\"Hello Sir. Welcome to the Catastrophe Tips line. Your call may be recorded for quality assurance.\"\n Another customer the same old line. I wonder what marketer thought it would be a good idea to call ourselvse the Catastrophe Tips line. Half the people who call me don't event even seem to relize this is about video games. \n The customer responds \"stuff...\"",
-            "next": "scene-2"
-        },
-
-        "scene-2": {
-            "text": "Somone calls on the phone",
+        "ignore-call-1": {
             "img": "back1.jpg",
+            "text": [
+                "I ignored the call and quit my dull, degrading, soul crushing job.",
+                 "Now I am taking a vacation to a beautiful french village.",
+                 "But wait. That couldn't have happened because I don't have any money.",
+                 "I must have taken the call"
+            ],
             "transitions": [
                 {
-                    "text": "Next",
-                    "targetId": "scene-3"
+                    "text": "Pick it up",
+                    "targetId": "call-1"
                 }
             ]
         },
 
-        "scene-3": {
-            "text": "You answer it",
-            "img": "back2.jpg",
-
+        "call-1": {
+            "text": [
+                "\"Hello Sir. Welcome to the Catastrophe Tips line. Your call may be recorded for quality assurance.\"",
+                "Another customer the same old line. I wonder what marketer thought it would be a good idea to call ourselvse the Catastrophe Tips line. Half the people who call me don't event even seem to relize this is about video games.",
+                "The customer responds \"stuff...\""
+            ],
+            "img": "shadowguy.png",
             "transitions": [
                 {
                     "text": "Next",
-                    "targetId": "scene-4"
+                    "targetId": "old-lady"
+                }
+            ]
+        },
+        "old-lady": {
+            "text": [
+                "Hello... Is this the Catastrophe line...",
+                "Yes ma'am this is the Catastrope Tips line. How can I help you",
+                "Theres a young man in my living room and he won't leave",
+                "What game are you talking about ma'am?",
+                "I am not playing any games with you. There is a young man in the living room and I want you to make him leave.",
+                "Ma'am I think you may be calling the wrong place. This is the chat line for video games",
+                "Ohh this is the video line? I don't think videos these days are appropriate for young people."
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "oldlady.png",
+            "transitions": [
+                {
+                    "text": "Hang up",
+                    "targetId": "cat-suit-salacious"
                 }
             ]
         },
 
-        "scene-4": {
-            "text": "random demo te it",
-            "img": "back3.jpg",
+        "cat-suit-salacious": {
+            "text": [
+                "I'm playing Tomb Raider III and I have learned, through a very discrete and reliable source that there are, hmm, how shall I say – salacious images available to players. Is this true? How can I get them?",
+                "Excuse Me?",
+                "Where do I get the images?",
+                "Sir there are no 'salacious' images hidden in Tomb Raider.",
+                "There are no solicitous images of Laura Croft anywhere?",
+                "Well... Not exactly. But there aren’t any in the game.",
+                "Where do I get them?",
+                "Try google images."
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "catinsuit.png",
 
             "transitions": [
                 {
@@ -61,9 +100,76 @@
             ]
         },
 
+        "burger-quest": {
+            "text": [
+                "I'm playing Burger Crisis II: Pizza time. I don't have enough time to aim, what do I do?",
+                "Go into burgertime – you don't have to horde it because you'll get more later – but be careful, you'll need to it beat the final boss.",
+                "Okay – got it."
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "catinsuit.png",
+            "transitions": [
+                {
+                    "text": "Next",
+                    "targetId": "intro"
+                }
+            ]
+        },
+
+        "burger-quest-combo": {
+            "text": [
+                "Now how do I learn the dream super combo in burger crisis?",
+                "You have to learn the burger crumble and burger sweep then you grind with Leisha the mage and Lute until your martial arts skills are high enough. The option will occur during a melee encounter.",
+                "Okay... … I think I'm gay."
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "catinsuit.png",
+            "transitions": [
+                {
+                    "text": "Next",
+                    "targetId": "intro"
+                }
+            ]
+        },
+
+        "swamp-level": {
+            "text": [
+                "DID MY SON JUST CALL YOU WHAT DID HE SAY. WHAT DID HE SAY.",
+                "I'm sorry sir. I can't divulge the content of calls. Do you have any videogame questions?",
+                "I'm player two in a burger-crisis deathmatch. How do I juggle with battlefury the bloodmage? How do I emotionally connect with my son?"
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "catinsuit.png",
+            "transitions": [
+                {
+                    "text": "Accept him for who he is",
+                    "targetId": "intro"
+                }, {
+                    "text": "press A,Z and then jump.",
+                    "targetId": "press A,Z and then jump."
+                }
+            ]
+        },
+
+        "swamp-level": {
+            "text": [
+                "Okay so I'm on the swamp level and I'm fighting the burger brain how do I avoid its psionic attacks? I'm almost completely out of plasma!",
+                "Use the mirror shield.",
+                "Okay. I'll try it. ** click."
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "catinsuit.png",
+            "transitions": [
+                {
+                    "text": "Next",
+                    "targetId": "intro"
+                }
+            ]
+        },
+
         "scene-5": {
             "text": "random demo te it",
-            "img": "back4.jpg",
+            "img": "burnvictim.png",
 
             "transitions": [
                 {

@@ -5,11 +5,15 @@ angular.module('vngame').controller('PlayCtrl', function ($scope, $routeParams, 
         $scope.loading = false;
 
         if ($scope.scene.text) {
-            $scope.unrenderedParagraphs = $scope.scene.text.split('\n');
-            $scope.nextParagraph();
+
+            if (typeof $scope.scene.text === 'string') {
+                $scope.unrenderedParagraphs = $scope.scene.text.split('\n');
+            } else {
+                $scope.unrenderedParagraphs = angular.copy($scope.scene.text);
+            }
         }
 
-
+        $scope.img = $scope.scene.img;
         sound.play('theme');
     };
 
@@ -18,18 +22,23 @@ angular.module('vngame').controller('PlayCtrl', function ($scope, $routeParams, 
     $scope.unrenderedParagraphs = [];
     $scope.paragraphs = [];
 
-    $scope.renderParagraphs = function (text) {
-        return text.split("\n");
-    };
 
     $scope.nextParagraph = function () {
-        if ($scope.unrenderedParagraphs.length < 1) {
-            location.hash = '#/play/' + $scope.scene.next;
-        } else {
-            $scope.paragraphs.push($scope.unrenderedParagraphs.splice(0, 1)[0]);
-        }
+        if ($scope.unrenderedParagraphs.length > 0) {
+            var nextParagraph = $scope.unrenderedParagraphs.splice(0, 1)[0];
 
-        //$scope.theme.play();
+            $scope.paragraphs.push(nextParagraph);
+            if ($scope.scene.imgAlternate) {
+                if ($scope.img === $scope.scene.imgAlternate) {
+                    $scope.img = $scope.scene.img;
+                } else {
+                    $scope.img = $scope.scene.imgAlternate;
+                }
+            }
+            if ($scope.paragraphs.length > 5) {
+                $scope.paragraphs.splice(0, 1);
+            }
+        }
     };
 
     if (gameData.loaded) {

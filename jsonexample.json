@@ -1,0 +1,23 @@
+{
+    "scenes": {
+        "scene-name": {
+            "text": [
+                "First line of text",
+                "Second line of text",
+                "Third line of text"
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "some-other-image.png",
+            "transitions": [
+                {
+                    "text": "First Transition",
+                    "targetId": "name-of-some-scene"
+                },
+                {
+                    "text": "Second transition",
+                    "targetId": "name-of-scene-to-go-to"
+                }
+            ]
+        }
+    }
+}
