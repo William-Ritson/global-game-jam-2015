@@ -17,11 +17,8 @@ angular.module('vngame').controller('PlayCtrl', function ($scope, $routeParams, 
         sound.play('theme');
     };
 
-    //$scope.theme = ngAudio.load('sounds/theme.mp3');
-
     $scope.unrenderedParagraphs = [];
     $scope.paragraphs = [];
-
 
     $scope.nextParagraph = function () {
         if ($scope.unrenderedParagraphs.length > 0) {
@@ -45,7 +42,6 @@ angular.module('vngame').controller('PlayCtrl', function ($scope, $routeParams, 
         init();
     } else {
         $scope.loading = true;
-        $log.log('trigger load');
         gameData.onLoad = function () {
             init();
         };

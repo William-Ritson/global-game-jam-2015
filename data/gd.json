@@ -5,12 +5,34 @@
         "other people"
     ],
     "scenes": {
-
         "intro": {
+            "text": [
+                "EXCITING JOB OPPORTUNITY",
+                "Your attention to detail and customer service communication skills will be an asset at the Catastrophe tip hotline as a guest experience engineer.",
+                "What you will be doing",
+                "Handling incoming and outgoing phone calls",
+                "Responding to guest requests about videogames",
+                "Learn and disseminate basic tricks and tips about videogames",
+                "Requirements",
+                "Display a guest orientation",
+                "Possess a working knowledge of computers",
+                "Display an excellent phone manner",
+                "Share a burning passion for videogames.",
+                "Submit to drug testing."
+            ],
+            "img": "office.png",
+            "transitions": [
+                {
+                    "text": "Next",
+                    "targetId": "intro-old"
+                }
+            ]
+        },
+
+        "intro-old": {
             "text": [
                 "9: A.M ... Time to clock in",
                 "Its just another day at the office taking calls at the Catastrophe Tip Line video game help service.",
-                "Its a lame name I know, I didn't chose it",
                 "*Bring... Bring*",
                 "My phone is ringing. I should probably pick it up. I don't really want to.",
                 "What do I do?"
@@ -32,9 +54,9 @@
             "img": "back1.jpg",
             "text": [
                 "I ignored the call and quit my dull, degrading, soul crushing job.",
-                 "Now I am taking a vacation to a beautiful french village.",
+                 "Now I am taking a vacation to a beautiful French village.",
                  "But wait. That couldn't have happened because I don't have any money.",
-                 "I must have taken the call"
+                 "I must have taken the call."
             ],
             "transitions": [
                 {
@@ -46,27 +68,47 @@
 
         "call-1": {
             "text": [
+                "Hello",
                 "\"Hello Sir. Welcome to the Catastrophe Tips line. Your call may be recorded for quality assurance.\"",
-                "Another customer the same old line. I wonder what marketer thought it would be a good idea to call ourselvse the Catastrophe Tips line. Half the people who call me don't event even seem to relize this is about video games.",
-                "The customer responds \"stuff...\""
+  "I'm playing Burger Crisis II: Pizza Time. I don't have enough time to aim, what do I do?",
+                "Go into burgertime – you don't have to horde it because you'll get more later – but be careful, you'll need to it beat the final boss.",
+                "Okay – got it."
             ],
             "img": "shadowguy.png",
+            "imgAlternate": "gayboy.png",
+            "transitions": [
+                {
+                    "text": "Next",
+                    "targetId": "ant-babes"
+                }
+            ]
+        },
+        
+        "ant-babes": {
+            "text": [
+                "I'm playing Ant Babes and I've romanced the librarian and the waitress, Olivia, how do I get the coach to fall in love with me?",
+                "You have to go to the haberdashery and purchase upgraded hats.",
+                "Happy rom-ANT-cing!"
+             ],
+            "img": "shadowguy.png",
+            "imgAlternate": "burnvictim.png",
             "transitions": [
                 {
                     "text": "Next",
                     "targetId": "old-lady"
-                }
-            ]
+                 }
+             ]
         },
+
         "old-lady": {
             "text": [
-                "Hello... Is this the Catastrophe line...",
-                "Yes ma'am this is the Catastrope Tips line. How can I help you",
-                "Theres a young man in my living room and he won't leave",
+                "Hello... Is this Catastrophe Security line...",
+                "No ma'am this is the Catastrope Tips line. How can I help you?",
+                "Theres a young man in my living room and he won't leave.",
                 "What game are you talking about ma'am?",
                 "I am not playing any games with you. There is a young man in the living room and I want you to make him leave.",
-                "Ma'am I think you may be calling the wrong place. This is the chat line for video games",
-                "Ohh this is the video line? I don't think videos these days are appropriate for young people."
+                "Ma'am I think you may be calling the wrong place. This is the chat line for video games.",
+                "No, he's not playing any video games. Just send someone over."
             ],
             "img": "shadowguy.png",
             "imgAlternate": "oldlady.png",
@@ -87,98 +129,414 @@
                 "There are no solicitous images of Laura Croft anywhere?",
                 "Well... Not exactly. But there aren’t any in the game.",
                 "Where do I get them?",
-                "Try google images."
+                "Try an image search."
             ],
             "img": "shadowguy.png",
             "imgAlternate": "catinsuit.png",
 
             "transitions": [
                 {
-                    "text": "Back to the start",
-                    "targetId": "intro"
+                    "text": "Next",
+                    "targetId": "burger-quest"
                 }
             ]
         },
 
         "burger-quest": {
             "text": [
-                "I'm playing Burger Crisis II: Pizza time. I don't have enough time to aim, what do I do?",
-                "Go into burgertime – you don't have to horde it because you'll get more later – but be careful, you'll need to it beat the final boss.",
-                "Okay – got it."
+                 "I'm playing Burger Crisis and I'm on level 2 and I'm having trouble gaining enough weight to unlock the motorcycle so that I can get to the next level.",
+  "Use your stomp attack on the burger cops to stun them.",
+  "Okay, I'll try it."
+
             ],
             "img": "shadowguy.png",
-            "imgAlternate": "catinsuit.png",
+            "imgAlternate": "gayboy.png",
             "transitions": [
                 {
                     "text": "Next",
-                    "targetId": "intro"
+                    "targetId": "old-lady-2"
                 }
             ]
         },
-
+        
+        "old-lady-2": {
+            "text": [
+                "Hello, is this Catastrophe security? Did you send anyone over yet. The young man is still here, but now he is outside sitting in his car.",
+                "I'm sorry, I think you have the wrong number.",
+                "My house numer is 421. Please send someone soon."
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "oldlady.png",
+            "transitions": [
+                {
+                    "text": "Next",
+                    "targetId": "burger-swamp-level"
+                }
+             ]
+        },
+        
+        "burger-swamp-level": {
+            "text": [
+                "Okay so I'm on the swamp level and I'm fighting the burger brain how do I avoid its psionic attacks? I'm almost completely out of plasma!",
+                "Use the mirror shield.",
+                "Okay. I'll try it."
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "gayboy.png",
+            "transitions": [
+                {
+                    "text": "Next",
+                    "targetId": "mario"
+                }
+            ]
+        },
+        
+        "mario": {
+            "text": [
+                 "How do I get the warp whistle in Super Mario III?",
+                 "Press the down button on a white block and run behind some black scenery in world 1-3. You will then be teleported to a toad house containing the warp whistle.",
+                 "Thanks!",
+                 "Good luck."
+             ],
+            "img": "shadowguy.png",
+            "imgAlternate": "hotdoglady.png",
+            "transitions": [
+                {
+                    "text": "Next",
+                    "targetId": "burger-quest-combo"
+                }
+            ]
+        },
+        
         "burger-quest-combo": {
             "text": [
-                "Now how do I learn the dream super combo in burger crisis?",
+                "Now how do I learn the dream super combo in Burger Crisis?",
                 "You have to learn the burger crumble and burger sweep then you grind with Leisha the mage and Lute until your martial arts skills are high enough. The option will occur during a melee encounter.",
-                "Okay... … I think I'm gay."
+                "Okay... I have something I need to tell you...",
+                "What is it?",
+                "I think I'm gay.",
+                "What?"
             ],
             "img": "shadowguy.png",
-            "imgAlternate": "catinsuit.png",
+            "imgAlternate": "gayboy.png",
             "transitions": [
                 {
-                    "text": "Next",
-                    "targetId": "intro"
+                    "text": "Why did he tell me that? I just help with video games.",
+                    "targetId": "burger-quest-son"
                 }
             ]
         },
 
-        "swamp-level": {
+        "burger-quest-son": {
             "text": [
-                "DID MY SON JUST CALL YOU WHAT DID HE SAY. WHAT DID HE SAY.",
+                "DID MY SON JUST CALL YOU? WHAT DID HE SAY? WHAT DID HE SAY?",
                 "I'm sorry sir. I can't divulge the content of calls. Do you have any videogame questions?",
                 "I'm player two in a burger-crisis deathmatch. How do I juggle with battlefury the bloodmage? How do I emotionally connect with my son?"
             ],
             "img": "shadowguy.png",
-            "imgAlternate": "catinsuit.png",
+            "imgAlternate": "dad.png",
             "transitions": [
                 {
                     "text": "Accept him for who he is",
-                    "targetId": "intro"
+                    "targetId": "shy-guy"
                 }, {
-                    "text": "press A,Z and then jump.",
-                    "targetId": "press A,Z and then jump."
+                    "text": "Press A, Z and then jump.",
+                    "targetId": "shy-guy"
                 }
             ]
         },
-
-        "swamp-level": {
+        
+        "shy-guy": {
             "text": [
-                "Okay so I'm on the swamp level and I'm fighting the burger brain how do I avoid its psionic attacks? I'm almost completely out of plasma!",
-                "Use the mirror shield.",
-                "Okay. I'll try it. ** click."
+                "I'm next to a girl and she's really pretty and I've had a crush on her since middle school and somehow I've managed to get her to go out on a date with me and I don'tknowwhattodoI'mtotallyfreakingoutwhatshouldIdo?",
+                "Hold her hand.",
+                "Okay. I'll try it. Should I neg her?",
+                "What no, respect women.",
+                "I am gona neg her anywhay what should I do anyway."
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "nervousguy.png",
+            "transitions": [
+                {
+                    "text": "X",
+                    "targetId": "old-lady-end"
+                },
+                {
+                    "text": "O",
+                    "targetId": "old-lady-end"
+                }
+            ]
+        },
+        
+        "old-lady-end": {
+            "text": [
+                "Thank you for sending someone out. The man is gone now.",
+                "I didn't send anyone.",
+                "You folks are so helpful. Catastrophe Security is the best $79.99 I've spent this month."
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "oldlady.png",
+            "transitions": [
+                {
+                    "text": "Ok then",
+                    "targetId": "depressed-flower"
+                }
+            ]        
+        },
+        
+        "depressed-flower": {
+            "text":  [
+                "Why am I so sad all the time?",
+                "Because your life is approached by sadness, and there is sadness within us all.",
+                "Can you help me?",
+                "You need to find the sadness and kill it.",
+                "How do I do that?"
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "flower.png",
+            "transitions": [
+                {
+                    "text": "Kill it with fire",
+                    "targetId": "cat-morgages"
+                },
+                {
+                    "text": "Speak to the level 48 Wizard of Light and get the Ice Sword", 
+                    "targetId": "cat-morgages"
+                },
+                {
+                    "text": "Look deep inside of your heart", 
+                    "targetId": "cat-morgages"
+                },
+                {
+                    "text": "Get a Therapist", 
+                    "targetId": "cat-morgages"
+                },
+                {
+                    "text": "Cry", 
+                    "targetId": "cat-morgages"
+                }
+            ]
+        },
+        
+        "cat-morgages": {
+            "text": [
+                "Why am I selling subprime mortgages to minority animals?", 
+                "You're leading a misguided life.",
+                "But I have all the cat nip and Laura Croft I want.",
+                "You need to rethink your priorities."
             ],
             "img": "shadowguy.png",
             "imgAlternate": "catinsuit.png",
             "transitions": [
                 {
-                    "text": "Next",
+                    "text": "Moving on",
+                    "targetId": "pickmen"
+                }
+            ]        
+        },
+        
+        "pickmen": {
+            "text": [
+                "How do I get the extrodinary bolt?",
+                "What are you playing?",
+                "Well, its this game. There's like these carrot people and you have to get off this planet to earn your boss money or he'll get killed by thugs and you have to gather garbage to repair your ship. There are all these different colored pikmin.",
+                "Is it Pikmin?",
+                "No, its not Pikmin, but there are pikmin in it.",
+                "Is it Pikmin 2?",
+                "Ohh yes that sounds right.",
+                "There is no extrodinary bolt in Pickmin 2 that is only found in the original Pickmin.",
+                "Are you sure? My friend said you need an extrodinary bolt.",
+                "Thats only in pickmin one ma'am."
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "hotdoglady.png",
+            "transitions": [
+                {
+                "text": "Next",
+                "targetId": "shy-guy-continued"
+                }
+            ]
+        },
+        
+        "shy-guy-continued": {
+            "text": [
+                "I tried negging her but it didn't work.",
+                "Then its time for desperate measures.",
+                "Like what? I don't want to go to jail.",
+                "Try this up up, down, down, left, right, left, right, B, A, select, start.",
+                "Ok I will try that."
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "nervousguy.png",
+            "transitions": [
+                {
+                    "text": "Select",
+                    "targetId": "burn-guy-continued"
+                },
+                {
+                    "text": "Start",
+                    "targetId": "burn-guy-continued"
+                }
+            ]
+        },
+        
+        "burn-guy-continued": {
+            "text": [
+                "I JUST DIED."
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "burnvictim.png",
+            "transitions": [
+                {
+                    "text": "Can't you like smoke up and just deal?",
+                    "targetId": "taco-guy"
+                },
+                {
+                    "text":  "You are not dead, man.",
+                    "targetId": "taco-guy"
+                }
+            ]
+        
+        },
+        
+        "taco-guy": {
+            "text":  [
+                "Mmm. You smell like two lines of dynamite.",
+                "What?",
+                "Don't hang up that sweet smell you.",
+                "I don't?"
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "sensualtaco.png",
+            "transitions": [
+                {
+                    "text": "?",
+                    "targetId": "taco-guy-continued"
+                },
+                {
+                    "text": "!",
+                    "targetId": "taco-guy-continued"
+                }
+            ]
+        },
+        
+        "taco-guy-continued": {
+            "text":  [
+                "Does anyone have a bright future working out?",
+                "What is this?",
+                "God I could be the craigslist of prison.",
+                "Click." 
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "sensualtaco.png",
+            "transitions": [
+                {
+                    "text": "?!?!",
+                    "targetId": "end"
+                },
+                {
+                    "text": "!?!?",
+                    "targetId": "end"
+                }
+            ]
+        },
+        
+        "end": {
+            "text": [
+                "Hello.",
+                "Hello?",
+                "How do I get people to stop calling me?",
+                "How do I get people to stop calling me? ",
+                "Does it ever end?",
+                "Does it ever end? ",
+                "Is my life just one endless loop?",
+                "Is my life just one endless loop? "
+            ],
+            "img": "shadowguy.png",
+            "imgAlternate": "shadowguyflipped.png",
+
+            "transitions": [
+                {
+                    "text": "The End",
+                    "targetId": "credits"
+                }
+            ]
+        },
+        
+        "credits": {
+            "text": [
+                "Time for the (gender bending) credits!",
+                "Designed by William Aubrey Mosher.",
+                "Art by Jade Justine Keller.",
+                "Programing by William Marc Ritson. ",
+                "Writing by Julya Crumpet Wacha."
+            ],
+            "img": "credits.png",
+
+            "transitions": [
+                {
+                    "text": "Epilogue",
+                    "targetId": "shy-guy-epilogue"
+                }
+            ]
+        },
+        
+         "shy-guy-epilogue": {
+            "text": [
+                "The Konami code works!",
+                "Domo Arigoto Mr Taco"
+            ],
+            "img": "theend.png",
+
+            "transitions": [
+                {
+                    "text": "Back to the Start!",
                     "targetId": "intro"
                 }
             ]
         },
-
-        "scene-5": {
-            "text": "random demo te it",
-            "img": "burnvictim.png",
-
+        
+        "dedication-scientist": {
+            "text": [
+                "Dedicated to",
+                "A. Piccard",
+                "E. Henriot",
+                "P. Ehrenfest",
+                "E. Herzen",
+                "Th. de Donder",
+                "E. Schrödinger",
+                "J.E. Verschaffelt",
+                "W. Pauli",
+                "W. Heisenberg",
+                "R.H. Fowler",
+                "L. Brillouin",
+                "P. Debye",
+                "M. Knudsen",
+                "W.L. Bragg",
+                "H.A. Kramers",
+                "P.A.M. Dirac",
+                "A.H. Compton",
+                "L. de Broglie",
+                "M. Born",
+                "N. Bohr",
+                "I. Langmuir",
+                "M. Planck", 
+                "M. Skłodowska-Curie", 
+                "H.A. Lorentz", 
+                "A. Einstein", 
+                "P. Langevin", 
+                "Ch.-E. Guye",
+                "C.T.R. Wilson", 
+                "and O.W. Richardson"
+            ],
+            "img": "scientists.jpg",
             "transitions": [
                 {
-                    "text": "Back to the start",
-                    "targetId": "intro"
+                    "text": "Epilogue",
+                    "targetId": "shy-guy-epilogue"
                 }
             ]
         }
-
     }
-
+    
 }

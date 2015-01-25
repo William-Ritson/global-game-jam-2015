@@ -1,4 +1,14 @@
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 #content {
+    .noselect;
     position: absolute;
     top: 0px;
     /* same as main header height */
@@ -36,12 +46,15 @@
     bottom: 0px;
     box-sizing: border-box;
     overflow: hidden;
+    .noselect;
     div {
         box-sizing: border-box;
+        .noselect
     }
 }
 
 #game-text {
+    .noselect;
     border: 2px solid;
     border-radius: 25px;
     z-index: 10;
@@ -61,7 +74,29 @@
     }
 }
 
+.text-repeat.ng-move,
+.text-repeat.ng-enter,
+.text-repeat.ng-leave {
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+}
+
+.text-repeat.ng-leave.ng-leave-active,
+.text-repeat.ng-move,
+.text-repeat.ng-enter {
+    opacity: 0;
+    max-height: 0;
+}
+
+.text-repeat.ng-leave,
+.text-repeat.ng-move.ng-move-active,
+.text-repeat.ng-enter.ng-enter-active {
+    opacity: 1;
+    max-height: 40px;
+}
+
 #game-controls {
+    .noselect;
     opacity: 0.8;
     position: absolute;
     padding: 2%;
@@ -78,6 +113,7 @@
 }
 
 #game-image {
+    .noselect;
     position: absolute;
     width: 100%;
     height: 100%;

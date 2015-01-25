@@ -3,8 +3,8 @@ angular.module('vngame').factory('sound', function ($log) {
     var sound = {},
         buzz = window.buzz,
         sounds = {
-            theme: new buzz.sound("/sounds/theme", {
-                formats: ["mp3", ]
+            theme: new buzz.sound("sounds/theme", {
+                formats: ["mp3"]
             })
         };
     

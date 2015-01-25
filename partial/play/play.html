@@ -3,7 +3,7 @@
     <div id="game" ng-click="nextParagraph()">
         <div id="game-text" ng-show="scene.text && paragraphs.length > 0" >
             <div ng-show="loading">Loading...</div>
-            <p ng-repeat="paragraph in paragraphs">{{paragraph}}</p>
+            <p  class="text-repeat" ng-repeat="paragraph in paragraphs">{{paragraph}}</p>
         </div>
 
         <div ng-show="scene.img">

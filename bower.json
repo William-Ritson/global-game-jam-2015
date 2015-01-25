@@ -23,6 +23,7 @@
     "less.js": "~1.6",
     "font-awesome": "~4.0",
     "angular-audio": "~1.4.1",
-    "buzz": "~1.1.8"
+    "buzz": "~1.1.8",
+    "lodash": "~3.0.0"
   }
 }
